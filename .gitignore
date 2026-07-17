@@ -1,0 +1,17 @@
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/processed/
+
+# Model checkpoints
+*.pth
+*.pt
