@@ -1,23 +1,24 @@
 from pathlib import Path
+import nibabel as nib
 
-# Update this path if your dataset location changes
 DATASET_PATH = Path(
     r"C:\AI_Research\BrainMRI-XAI-Robustness\data\raw\ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData\ASNR-MICCAI-BraTS2023-GLI-Challenge-TrainingData"
 )
 
-# Get all patient folders
 patients = sorted([p for p in DATASET_PATH.iterdir() if p.is_dir()])
 
 print("=" * 60)
-print(f"Total patients: {len(patients)}")
+print(f"Total Patients : {len(patients)}")
 print("=" * 60)
 
-first_patient = patients[0]
+patient = patients[0]
 
-print("\nFirst patient folder:")
-print(first_patient.name)
+print(f"\nPatient : {patient.name}\n")
 
-print("\nFiles:")
+for file in sorted(patient.glob("*.nii.gz")):
+    image = nib.load(str(file))
 
-for file in sorted(first_patient.iterdir()):
     print(file.name)
+    print(f"Shape : {image.shape}")
+    print(f"Datatype : {image.get_data_dtype()}")
+    print("-" * 50)
