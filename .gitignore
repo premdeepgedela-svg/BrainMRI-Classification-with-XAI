@@ -1,17 +1,17 @@
-# VS Code
-.vscode/
-
-# Python
 __pycache__/
-*.py[cod]
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Data
-data/raw/
-data/processed/
-
-# Model checkpoints
+*.pyc
 *.pth
-*.pt
+
+.env
+.vscode/
+.idea/
+
+results/checkpoints/
+results/resnet18/checkpoints/
+
+data/raw/
+
+*.ipynb_checkpoints
+
+.DS_Store
+Thumbs.db
