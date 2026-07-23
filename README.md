@@ -231,7 +231,7 @@ Grad-CAM was used to visualize the regions that influenced the ResNet-18 model's
 
 | Normal Brain | Tumor Brain |
 |:------------:|:-----------:|
-| <img src="results\gradcam_gallery\normal\normal_1.png" width="450"> | <img src="results\gradcam_gallery\normal\tumor_1.png" width="450"> |
+| <img src="results\gradcam_gallery\normal\normal_1.png" width="450"> | <img src="results\gradcam_gallery\tumor\tumor_1.png" width="450"> |
 
 **Left:** Example of a normal MRI slice with Grad-CAM explanation.
 
