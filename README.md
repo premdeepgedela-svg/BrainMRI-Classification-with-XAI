@@ -1,3 +1,4 @@
+Python | PyTorch | CUDA | ResNet-18 | Grad-CAM | BraTS 2023 | MIT License
 # 🧠 Brain MRI Tumor Classification using Multi-Modal MRI and Explainable AI
 
 A deep learning framework for **brain tumor slice classification** using the **BraTS 2023 dataset** and **ResNet-18** with **Grad-CAM** explainability.
@@ -233,9 +234,9 @@ Grad-CAM was used to visualize the regions that influenced the ResNet-18 model's
 |:------------:|:-----------:|
 | <img src="results\gradcam_gallery\normal\normal_1.png" width="450"> | <img src="results\gradcam_gallery\tumor\tumor_1.png" width="450"> |
 
-**Left:** Example of a normal MRI slice with Grad-CAM explanation.
+**Normal Brain (Left):** The Grad-CAM heatmap is broadly distributed over normal anatomical structures, indicating that the model relies on meaningful brain features when predicting the normal class.
 
-**Right:** Example of a tumor MRI slice with Grad-CAM explanation.
+**Tumor Brain (Right):** The Grad-CAM heatmap concentrates around the lesion region, suggesting that the model focuses on clinically relevant areas for tumor classification.
 
 # Technologies Used
 
@@ -251,17 +252,16 @@ Grad-CAM was used to visualize the regions that influenced the ResNet-18 model's
 
 ---
 
-# Future Work
+## Future Work
 
-Possible future extensions include:
+This project establishes a baseline explainable AI pipeline for brain MRI classification.
 
-- Vision Transformer (ViT) models
-- EfficientNet-based classifiers
-- 3D CNN architectures
-- Attention-based explainability
-- Multi-class tumor subtype classification
-- Explainability robustness under distribution shifts
-- Clinical validation on external datasets
+Future extensions include:
+
+- Robustness evaluation under controlled distribution shifts
+- Quantitative Grad-CAM stability analysis
+- Comparison of multiple explainability methods (Grad-CAM, Grad-CAM++, Score-CAM)
+- Explanation consistency metrics
 
 ---
 
