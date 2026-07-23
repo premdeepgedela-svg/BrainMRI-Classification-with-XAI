@@ -137,6 +137,29 @@ BrainMRI-XAI-Robustness
 └── LICENSE
 ```
 
+# Project Workflow
+
+```
+BraTS 2023 MRI Dataset
+          │
+          ▼
+ Data Preprocessing
+          │
+          ▼
+ Slice Generation
+          │
+          ▼
+ Patient-level Split
+          │
+          ▼
+ ResNet-18 Training
+          │
+          ▼
+ Model Evaluation
+          │
+          ▼
+ Grad-CAM Visualization
+
 ---
 
 # Installation
